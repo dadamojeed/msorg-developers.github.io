@@ -30,7 +30,7 @@
 		+ Sections
 			- About
 			- Features and Video
-			+ Pricing Tables
+			+ level-transformation Tables
 				- Keyframes
 			- Form Calculator
 			- Team
@@ -342,8 +342,8 @@ body.light ul.nav.nav-tabs li a {
 }
 
 body.light ul.bitcoin-stats h6,
-body.light .pricing-header h2,
-body.light .pricing-header h2 span,
+body.light .level-transformation-header h2,
+body.light .level-transformation-header h2 span,
 body.light .footer .top-footer .menu ul li a,
 body.light .footer .top-footer h4.payment-title,
 body.light .footer .bottom-footer p,
@@ -356,7 +356,7 @@ body.light .terms-of-services h3 {
 body.light ul.user li.sign-in a.btn-primary:hover,
 body.light ul.user li.sign-in a.btn-primary:focus,
 body.light ul.user li.sign-in a.btn-primary:active,
-body.light .pricing-switcher label,
+body.light .level-transformation-switcher label,
 body.light .team-member:hover .team-member-caption h4,
 body.light blockquote p {
     color: #fff;
@@ -368,7 +368,7 @@ body.light .features-row,
 body.light .image-block,
 body.light .team-member-caption,
 body.light .image-block2,
-body.light .pricing-wrapper>li,
+body.light .level-transformation-wrapper>li,
 body.light .bitcoin-calculator-section .container,
 body.light .facts .container,
 body.light .shop-cart table.order thead tr,
@@ -410,7 +410,7 @@ body.light.blog .comments-heading,
 body.light .service-box h3,
 body.light .facts .facts-content .heading-facts h2,
 body.light .facts h3,
-body.light .pricing h3,
+body.light .level-transformation h3,
 body.light .banner-area .breadcrumb>li,
 body.light .banner-area .breadcrumb>li+li:before,
 body.light .shop-cart .table thead>tr>th,
@@ -451,7 +451,7 @@ body.light .service-box>div {
     background: #f2f2f2;
 }
 
-body.light .pricing-switcher>p {
+body.light .level-transformation-switcher>p {
     background: #333;
     border: 1px solid #333;
 }
@@ -592,41 +592,6 @@ body.light .shop-checkout .table tbody>tr {
     border-bottom: 1px solid #ddd;
 }
 
-/*** Preloader ***/
-
-#preloader {
-    position: fixed;
-    z-index: 1111111111111;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: #111;
-}
-
-#preloader-content {
-    width: 200px;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    top: 50%;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%) rotate(-13deg);
-    -ms-transform: translate(-50%, -50%) rotate(-13deg);
-    transform: translate(-50%, -50%) rotate(-13deg);
-}
-
-.path {
-    stroke-dasharray: 2350;
-    stroke-dashoffset: 910;
-    stroke-width: 4;
-    stroke-linecap: round;
-    -webkit-animation: dash 3s linear infinite;
-    animation: dash 3s linear infinite;
-    fill-opacity: 0;
-}
 
 /* Back To Top */
 
@@ -1574,176 +1539,60 @@ ul.nav.nav-tabs li.active a:hover {
 
 /*** LEVEL TRANSFORMATION TABLES ***/
 
-.pricing-tables-content {
+.level-transformation-tables-content {
     margin-top: 25px;
 }
 
-.pricing-tables-content.pricing-page {
+.level-transformation-tables-content.level-transformation-page {
     margin-top: 0;
 }
 
-.pricing-tables-content .header {
+.level-transformation-tables-content .header {
     height: 100px;
     line-height: 170px;
     position: relative;
 }
 
-.pricing h3 {
+.level-transformation h3 {
     color: #fff;
     text-transform: uppercase;
 }
 
-.pricing h3.sell-title {
+.level-transformation h3.sell-title {
     margin-top: 50px;
 }
 
-.pricing-switcher {
-    text-align: center;
-}
 
-.pricing-switcher>p {
-    display: inline-block;
-    position: relative;
-    padding: 0;
-    padding-right: 4px;
-    border-radius: 0;
-    background: #111;
-    border: 1px solid #333;
-}
-
-.pricing-switcher input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-}
-
-.pricing-switcher label {
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    float: left;
-    width: 105px;
-    height: 39px;
-    line-height: 43px;
-    cursor: pointer;
-    padding-left: 8px;
-    font-size: 16px;
-    color: #fff;
-}
-
-.pricing-switcher label.switch-1.active,
-.pricing-switcher label.switch-2.active {
-    color: #fff;
-}
-
-.pricing-switcher .switch {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    height: 40px;
-    width: 105px;
-    border-radius: 0;
-    -webkit-transition: -webkit-transform 0.5s;
-    -moz-transition: -moz-transform 0.5s;
-    transition: transform 0.5s;
-}
-
-.pricing-switcher input[type="radio"]:checked+label+.switch,
-.pricing-switcher input[type="radio"]:checked+label:nth-of-type(n)+.switch {
-    -webkit-transform: translateX(105px);
-    -moz-transform: translateX(105px);
-    -ms-transform: translateX(105px);
-    -o-transform: translateX(105px);
-    transform: translateX(105px);
-}
-
-.no-js .pricing-switcher {
-    display: none;
-}
-
-.pricing-list {
+.level-transformation-list {
     margin: 32px 0 0;
     list-style-type: none;
 }
 
-.pricing-list>li {
+.level-transformation-list>li {
     position: relative;
     margin-bottom: 16px;
 }
 
-.pricing-wrapper {
+.level-transformation-wrapper {
     position: relative;
     list-style-type: none;
     padding: 0;
 }
 
-.touch .pricing-wrapper {
+.touch .level-transformation-wrapper {
     -webkit-perspective: 2000px;
     -moz-perspective: 2000px;
     perspective: 2000px;
 }
 
-.pricing-wrapper.is-switched .is-visible {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    -webkit-animation: rotate 0.5s;
-    -moz-animation: rotate 0.5s;
-    animation: rotate 0.5s;
-}
-
-.pricing-wrapper.is-switched .is-hidden {
-    -webkit-transform: rotateY(0);
-    -moz-transform: rotateY(0);
-    -ms-transform: rotateY(0);
-    -o-transform: rotateY(0);
-    transform: rotateY(0);
-    -webkit-animation: rotate-inverse 0.5s;
-    -moz-animation: rotate-inverse 0.5s;
-    animation: rotate-inverse 0.5s;
-    opacity: 0;
-}
-
-.pricing-wrapper.is-switched .is-selected {
-    opacity: 1;
-}
-
-.pricing-wrapper.is-switched.reverse-animation .is-visible {
-    -webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    -ms-transform: rotateY(-180deg);
-    -o-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-    -webkit-animation: rotate-back 0.5s;
-    -moz-animation: rotate-back 0.5s;
-    animation: rotate-back 0.5s;
-}
-
-.pricing-wrapper.is-switched.reverse-animation .is-hidden {
-    -webkit-transform: rotateY(0);
-    -moz-transform: rotateY(0);
-    -ms-transform: rotateY(0);
-    -o-transform: rotateY(0);
-    transform: rotateY(0);
-    -webkit-animation: rotate-inverse-back 0.5s;
-    -moz-animation: rotate-inverse-back 0.5s;
-    animation: rotate-inverse-back 0.5s;
-    opacity: 0;
-}
-
-.pricing-wrapper.is-switched.reverse-animation .is-selected {
-    opacity: 1;
-}
-
-.pricing-wrapper>li {
+.level-transformation-wrapper>li {
     background-color: #1d1d1d;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     outline: 1px solid transparent;
 }
 
-.pricing-wrapper>li::after {
+.level-transformation-wrapper>li::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1755,16 +1604,16 @@ ul.nav.nav-tabs li.active a:hover {
     background: linear-gradient(to left, #FFFFFF, rgba(255, 255, 255, 0));
 }
 
-.pricing-wrapper>li.is-ended::after {
+.level-transformation-wrapper>li.is-ended::after {
     display: none;
 }
 
-.pricing-wrapper .is-visible {
+.level-transformation-wrapper .is-visible {
     position: relative;
     z-index: 5;
 }
 
-.pricing-wrapper .is-hidden {
+.level-transformation-wrapper .is-hidden {
     position: absolute;
     top: 0;
     left: 0;
@@ -1778,26 +1627,18 @@ ul.nav.nav-tabs li.active a:hover {
     transform: rotateY(180deg);
 }
 
-.pricing-wrapper .is-selected {
-    z-index: 3 !important;
-}
 
-.no-js .pricing-wrapper .is-hidden {
-    position: relative;
-    -webkit-transform: rotateY(0);
-    -moz-transform: rotateY(0);
-    -ms-transform: rotateY(0);
-    -o-transform: rotateY(0);
-    transform: rotateY(0);
-    margin-top: 16px;
-}
 
 .price {
     margin-top: 45px;
     color: #fff;
 }
 
-.pricing-header {
+.level-transformation-action-btn {
+  margin-left:520px;
+}
+
+.level-transformation-header {
     position: relative;
     z-index: 1;
     height: 80px;
@@ -1807,7 +1648,7 @@ ul.nav.nav-tabs li.active a:hover {
     color: #FFFFFF;
 }
 
-.pricing-header h2 {
+.level-transformation-header h2 {
     margin-bottom: 3px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1819,26 +1660,24 @@ ul.nav.nav-tabs li.active a:hover {
     font-weight: 300;
 }
 
-.pricing-body {
+.level-transformation-body {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
 
-.is-switched .pricing-body {
-    overflow: hidden;
-}
 
-.pricing-features {
+
+.level-transformation-features {
     width: 600px;
 }
 
-.pricing-features:after {
+.level-transformation-features:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.pricing-features li {
+.level-transformation-features li {
     width: 100px;
     float: left;
     padding: 25px 16px;
@@ -1849,13 +1688,13 @@ ul.nav.nav-tabs li.active a:hover {
     text-overflow: ellipsis;
 }
 
-.pricing-features em {
+.level-transformation-features em {
     display: block;
     margin-bottom: 5px;
     font-weight: 600;
 }
 
-.pricing-footer {
+.level-transformation-footer {
     position: absolute;
     z-index: 1;
     top: 0;
@@ -1864,7 +1703,7 @@ ul.nav.nav-tabs li.active a:hover {
     width: 100%;
 }
 
-.pricing-footer::after {
+.level-transformation-footer::after {
     content: '';
     position: absolute;
     right: 16px;
@@ -1879,7 +1718,7 @@ ul.nav.nav-tabs li.active a:hover {
     width: 20px;
 }
 
-.pricing-footer a {
+.level-transformation-footer a {
     display: block;
     margin: 0 30px;
 }
@@ -1895,28 +1734,28 @@ ul.nav.nav-tabs li.active a:hover {
     color: transparent;
 }
 
-.pricing-tables-content .header {
+.level-transformation-tables-content .header {
     height: 160px;
     line-height: 280px;
 }
 
-.pricing-list {
+.level-transformation-list {
     margin: 48px 0 0;
     padding: 0;
 }
 
-.pricing-list:after {
+.level-transformation-list:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.pricing-list>li {
+.level-transformation-list>li {
     float: left;
     padding: 0 15px;
 }
 
-.pricing-wrapper>li::before {
+.level-transformation-wrapper>li::before {
     content: '';
     position: absolute;
     z-index: 6;
@@ -1932,11 +1771,11 @@ ul.nav.nav-tabs li.active a:hover {
     width: 1px;
 }
 
-.pricing-wrapper>li::after {
+.level-transformation-wrapper>li::after {
     display: none;
 }
 
-.pricing-header {
+.level-transformation-header {
     height: auto;
     padding: 30px;
     pointer-events: auto;
@@ -1945,12 +1784,12 @@ ul.nav.nav-tabs li.active a:hover {
     background-color: transparent;
 }
 
-.popular .pricing-header {
+.popular .level-transformation-header {
     color: #e97d68;
     background-color: transparent;
 }
 
-.pricing-header h2 {
+.level-transformation-header h2 {
     font-size: 1.8rem;
     margin-top: 25px;
     line-height: 1.8rem;
@@ -1958,7 +1797,7 @@ ul.nav.nav-tabs li.active a:hover {
     letter-spacing: 2px;
 }
 
-.pricing-header h2 span {
+.level-transformation-header h2 span {
     color: #e7e7e7;
     display: block;
     padding-top: 17px;
@@ -1976,37 +1815,37 @@ ul.nav.nav-tabs li.active a:hover {
     font-weight: 600;
 }
 
-.pricing-body {
+.level-transformation-body {
     overflow-x: visible;
 }
 
-.pricing-features {
+.level-transformation-features {
     width: auto;
 }
 
-.pricing-features li {
+.level-transformation-features li {
     float: none;
     width: auto;
     padding: 16px;
 }
 
-.pricing-features li:nth-of-type(2n+1) {
+.level-transformation-features li:nth-of-type(2n+1) {
     background-color: rgba(23, 61, 80, 0.06);
 }
 
-.pricing-features em {
+.level-transformation-features em {
     display: inline-block;
     margin-bottom: 0;
 }
 
-.pricing-footer {
+.level-transformation-footer {
     position: relative;
     height: auto;
     padding: 30px 0;
     text-align: center;
 }
 
-.pricing-footer::after {
+.level-transformation-footer::after {
     display: none;
 }
 
@@ -3000,14 +2839,14 @@ section.shop-checkout {
     background: #444;
 }
 
-.facts .btn-primary.btn-pricing {
+.facts .btn-primary.btn-level-transformation {
     background: transparent;
     padding: 11px 29px;
 }
 
-.facts .btn-primary.btn-pricing:hover,
-.facts .btn-primary.btn-pricing:active,
-.facts .btn-primary.btn-pricing:focus {
+.facts .btn-primary.btn-level-transformation:hover,
+.facts .btn-primary.btn-level-transformation:active,
+.facts .btn-primary.btn-level-transformation:focus {
     color: #fff;
 }
 
@@ -3649,7 +3488,7 @@ h4.panel-title a.collapsed:before {
     .img-about-us {
         padding-bottom: 60px;
     }
-    .pricing-list>li {
+    .level-transformation-list>li {
         margin-bottom: 30px;
     }
     .bg-image-2 {
@@ -4187,7 +4026,7 @@ h4.panel-title a.collapsed:before {
     .facts .buttons .btn.btn-register {
         margin-top: 18px;
     }
-    .facts .btn-primary.btn-pricing {
+    .facts .btn-primary.btn-level-transformation {
         margin-bottom: 15px;
     }
     .facts-content .heading-facts p {
@@ -4267,7 +4106,7 @@ h4.panel-title a.collapsed:before {
     .bg-grey-chart {
         height: inherit;
     }
-    .pricing-list>li {
+    .level-transformation-list>li {
         margin-bottom: 15px;
     }
     ul.nav.nav-tabs {
@@ -4327,7 +4166,7 @@ h4.panel-title a.collapsed:before {
     .team-member {
         margin-bottom: 15px;
     }
-    .pricing-list>li {
+    .level-transformation-list>li {
         float: none;
         width: 100%;
     }
@@ -4359,10 +4198,10 @@ h4.panel-title a.collapsed:before {
     .service-box h3 {
         margin: 15px 0 10px;
     }
-    .pricing-footer {
+    .level-transformation-footer {
         padding: 30px 0 15px;
     }
-    .pricing-footer a {
+    .level-transformation-footer a {
         margin: 0 15px;
     }
     .sidebar ul.nav.nav-tabs li a {
